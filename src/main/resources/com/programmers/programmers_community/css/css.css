@@ -1,0 +1,134 @@
+/* Vertical background */
+.root {
+    -fx-background-image: url("/com/programmers/programmers_community/images/fondo_hexagonos_vertical.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-font-family: "Arial";
+}
+
+/* Horizontal background */
+.root-horizontal {
+    -fx-background-image: url("/com/programmers/programmers_community/images/fondo_horizontal.png");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
+    -fx-font-family: "Arial";
+}
+
+/* Card */
+.card {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 16;
+}
+
+/* Titles */
+.main-title {
+    -fx-text-fill: #1F2937;
+    -fx-font-weight: bold;
+}
+
+/* Labels (Username, Password, Gender) */
+.label-blue {
+    -fx-text-fill: #1F4E9E;
+    -fx-font-weight: bold;
+}
+
+/* Error messages */
+.label-error {
+    -fx-text-fill: #B91C1C;
+}
+
+.input-error {
+    -fx-background-color: #FEE2E2;
+    -fx-border-color: #B91C1C;
+}
+
+/* Text fields and combo boxes */
+.text-field, .combo-box {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD2DB;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+/* Secondary buttons and radio buttons */
+.btn-secondary {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #CBD2DB;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-text-fill: #1F2937;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #EAF1FB;
+}
+
+/* Primary button (Log In) */
+.btn-primary {
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+    -fx-background-color: #1F6AD8;
+    -fx-border-color: #1F6AD8;
+    -fx-text-fill: #FFFFFF;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1858B5;
+}
+
+/* ---------- TABLE ---------- */
+
+/* The whole table container */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: #d0d7e2;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+/* The full header bar (the top strip, edge to edge) */
+.table-view .column-header-background {
+    -fx-background-color: #e9eef6;
+}
+
+/* Each header cell (Name, Age...), with a bottom line */
+.table-view .column-header {
+    -fx-background-color: #e9eef6;
+    -fx-border-color: transparent transparent #d0d7e2 transparent;
+}
+
+/* The text inside each header */
+.table-view .column-header .label {
+    -fx-text-fill: #1f2937;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+}
+
+/* Each full row */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: transparent;
+}
+
+/* Alternate rows (2nd, 4th, 6th...) with a soft blue-gray */
+.table-row-cell:odd {
+    -fx-background-color: #f6f8fb;
+}
+
+/* Each cell inside a row */
+.table-cell {
+    -fx-text-fill: #1f2937;
+    -fx-font-size: 13px;
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 4 8 4 8;
+}
+
+/* Text shown when the table is empty */
+.table-view .placeholder .label {
+    -fx-text-fill: #8a94a6;
+}

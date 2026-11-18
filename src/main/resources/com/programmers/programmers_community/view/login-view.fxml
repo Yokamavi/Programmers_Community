@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" fillWidth="false" prefHeight="550" prefWidth="450" styleClass="root" stylesheets="@../css/css.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.programmers.programmers_community.controller.LoginController">
+    <children>
+        <HBox fx:id="Head" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="450.0">
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/logo.png" />
+                    </image>
+                </ImageView>
+                <Label prefHeight="100.0" prefWidth="250.0" styleClass="main-title" text="Programmers Community" wrapText="true">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font name="Arial Bold" size="34.0" />
+                    </font>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </HBox>
+        <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="140.0" prefWidth="225.0" styleClass="card">
+            <children>
+                <Label styleClass="label-blue" text="Username:" textFill="#0068ff">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="txtUserLogin" alignment="CENTER" prefHeight="45.0" prefWidth="150.0" promptText="Username (min. 5)" styleClass="text-field">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </TextField>
+                <Label fx:id="lblUserErrors" styleClass="label-error" textFill="RED">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="Arial" size="12.0" />
+                    </font>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </VBox>
+        <VBox alignment="TOP_CENTER" fillWidth="false" prefHeight="140.0" prefWidth="225.0" styleClass="card">
+            <children>
+                <Label styleClass="label-blue" text="Password:" textFill="#0068ff">
+                    <font>
+                        <Font name="Arial" size="20.0" />
+                    </font>
+                </Label>
+                <PasswordField fx:id="pfPasswordLogin" alignment="CENTER" prefHeight="45.0" prefWidth="150.0" promptText="Password" styleClass="text-field">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                </PasswordField>
+                <Label fx:id="lblPasswordErrors" styleClass="label-error" textFill="RED">
+                    <VBox.margin>
+                        <Insets top="5.0" />
+                    </VBox.margin>
+                </Label>
+            </children>
+            <VBox.margin>
+                <Insets top="20.0" />
+            </VBox.margin>
+        </VBox>
+        <HBox alignment="CENTER" fillHeight="false" prefHeight="100.0" prefWidth="450.0">
+            <children>
+                <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#onLogIn" prefHeight="40.0" prefWidth="105.0" styleClass="btn-primary" text="Log In">
+                    <HBox.margin>
+                        <Insets right="40.0" />
+                    </HBox.margin>
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/log_in_symbol.png" />
+                            </image></ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnSignUp" layoutX="78.0" layoutY="43.0" mnemonicParsing="false" onAction="#onSignUp" prefHeight="40.0" prefWidth="105.0" styleClass="btn-secondary" text="Sign Up">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/user_register.png" />
+                            </image></ImageView>
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="40.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="20.0" top="30.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>
