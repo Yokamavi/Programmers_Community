@@ -4,9 +4,11 @@ Aplicación de escritorio en JavaFX para gestionar una comunidad de programadore
 
 ## Qué hace
 
-- [Lo que ya funciona, por ejemplo: guardar perfiles de programadores]
-- [Consultar los perfiles guardados filtrados por lenguaje de programación]
-- [Añade login, registro o edición de perfil solo si ya funcionan]
+- Registro e inicio de sesión de usuarios.
+- Pantalla de inicio con la lista de programadores guardados, filtrable por lenguaje de programación.
+- Edición del perfil de cada usuario.
+- Exportación a Excel y PDF de los datos que muestra la tabla según el filtro aplicado.
+- Persistencia de datos con JPA sobre ObjectDB.
 
 ## Tecnologías
 
@@ -21,16 +23,12 @@ Java 21, JavaFX, Maven, JPA, ObjectDB
 
 Requisitos: JDK 21 y Maven.
 
-```bash
-git clone https://github.com/Yokamavi/[nombre-del-repositorio].git
-cd [nombre-del-repositorio]
-mvn javafx:run
-```
+Abre el proyecto en IntelliJ IDEA y ejecuta el programa (a través de la clase Launcher).
 
 ## Estado
 
-En desarrollo. Pendiente: [lo que aún no hayas hecho].
+En desarrollo.
 
 ## Autor
 
-Aarón Martíns Vilas · [enlace a tu LinkedIn]
+Aarón Martíns Vilas · www.linkedin.com/in/aaron-martins-vilas
